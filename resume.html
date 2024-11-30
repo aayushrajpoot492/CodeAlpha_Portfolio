@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		
+		
+		.header1{
+			width: 100%;
+			height: 100px;
+			display: flex;
+			justify-content: space-between;
+			background-color: rgba(0, 0, 0, 1);
+		    align-items: center;
+		    padding: 50px 10px;
+		}
+
+		.logo{
+			font-size: 35px;
+			font-weight: bold;
+			letter-spacing: 1.5px;
+			color: skyblue;
+		   -webkit-background-clip:text;
+		    text-shadow: 10px 15px 0px skyblue;
+		    animation: text 1s infinite alternate;
+
+		}
+		@keyframes text {
+			100%{
+				text-shadow: 0px 0px 0px white;
+			}
+		}
+
+		.pogo{
+			background-color:black ;
+			height: 1220px;
+			border: solid skyblue 6px;
+			box-shadow: 0px 0px 10px skyblue;
+		}
+
+     a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+    transform: scaleX(0);
+    transform-origin: top right;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+   
+   }
+
+      a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    cursor: pointer;
+
+    }
+		
+		
+
+        li{
+			display: inline-block;
+		    padding: 0px 35px;
+           
+		}
+		li :hover{
+                 color: skyblue;
+                 text-decoration: none;
+        }
+
+     
+
+		a{
+		   color: white;
+		   font-size: 20px;
+		  
+		   cursor: pointer;
+		}
+		.a1{
+			color: white;
+			text-decoration: none;
+		}
+		.button1{
+			background-color: black;
+			border: 3px solid skyblue;
+			border-radius: 50px;
+			padding: 9px 25px;
+			transition-property: background-color ;
+			transition-duration: 1s;	
+			text-decoration: none;
+				    
+		 }
+		 
+		 .button1:hover .a1{
+		 	color: skyblue;
+		 	text-decoration: none;
+		
+	 }
+		
+		.lolo{
+			height: 50px;
+			width: 100px;
+			background-color: skyblue;
+			animation-direction: alternate;
+			 animation: mess 1s infinite;
+			clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+		}
+		@keyframes mess{
+			from{
+				
+				width: 100px;
+			}
+			to{
+				width: 150px;
+			}
+		}
+
+		
+		.solo{
+			width: 150px;
+		}
+		.text-black-50{
+			color: black;
+		
+		}
+		.text-grey-50{
+			background-color: skyblue;
+		}
+		footer{
+			height: 40px;
+		}
+		.mb-5{
+			color: white;
+		}
+		ul{
+			color: grey;
+		}
+		#mb-5{
+			margin-left: 75px;
+		}
+		#mb-6{
+			position: relative;
+			left: 75px;
+		}
+		#col-md-6{
+			position: absolute;
+			left: 950px;
+		}
+		#mb-7{
+			position: relative;
+			left: 70px;
+		}
+		#header2{
+			margin-top: 50px;
+		}
+		#header2:hover{
+			background-color: white;
+		}
+		#header2:hover h1{
+			color: black;
+		}
+		#header2:hover h3{
+			color: black;
+		}
+		#width{
+			position: relative;
+			left: 200px;
+		}
+		#one{
+			margin-left: 20px;
+			position: relative;
+			top: 20px;
+		}
+		#two{
+			margin-left: 490px;
+			position: relative;
+			bottom: 10px;
+		}
+			#three{
+			margin-left: 850px;
+			position: relative;
+			bottom: 40px;
+		}
+		span{
+			font-size: 20px;
+		}
+		span:hover{
+			color: skyblue;
+		}
+
+		.text-primary{
+			color: skyblue;
+		}
+		#header2:hover .border-top {
+			color: black;
+		}
+		.col-md-3
+		{
+			position: relative;
+			left: 100px;
+		}
+		
+	
+		 
+	</style>
+</head>
+<body>
+	 <div class="pogo">
+	 <header class="header1">
+	 	<div class="logo">PORTFOLIO</div>
+	 	<div class="solo"><div class="lolo"></div></div>
+		<nav>
+			<ul>
+			    <li><a class="glyphicon glyphicon-home"  href="index.html">.Home</a></li>
+			    <li><a class="glyphicon glyphicon-project" href="project.html">Projects</a> </li>
+		        <li><a class="glyphicon glyphicon-project"  href="resume.html">Resume</a> </li>
+		        <li><a class="glyphicon glyphicon-earphone" href="contact.html">ContactUs</a></li>
+			</ul>
+		</nav>
+		<button class="button1"><a class="a1" class="glyphicon glyphicon-project" href="About.html">About me</a></button>
+	</header>
+	 <!-- header -->
+  <header class="bg-primary bg-gradient text-white py-5" id="header2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 text-left text-md-center mb-3" id="boxes">
+        <img class="rounded-circle img-fluid" src="img3.jpg" style="height: 200px; width: 150px;position: relative;right: 90px;" />
+      </div>
+
+      <div class="col-md-9">
+        <h1>AAYUSH RAJPOOT</h1>
+        <h3>Student | Fresher</h3>
+        <h4 class="border-top pt-3">I'm a  curently pursing B.Tech( BACHELOR of Technology ) from Dr.Hari Singh Gour Sagar University MP.My objectives are to built skills and gain experience truth different avenues to become a change maker and cooperate leader,to be interprising and dynamic in approach. </h4>
+      </div>       
+    </div>        
+  </div>
+</header>
+<nav class="bg-dark text-white-50 mb-5">
+  <div class="container">
+   <div class="row p-3">
+
+     <div class="col-md pb-2 pb-md-0" id="one">
+      <span class="glyphicon glyphicon-envelope"></span>
+        <span class="text-white ml-2">aayushrajpoot492@gmail.com</span>
+     </div>
+
+     <div class="col-md text-md-center pb-2 pb-md-0" id="two">
+        <span class="glyphicon glyphicon-globe"></span> 
+        <span class="text-white ml-2">https://</span>
+      </div> 
+
+      <div class="col-md text-md-right" id="three">
+         <span class="glyphicon glyphicon-earphone"></span>
+        <span class="text-white ml-2">+91 9165931430</span>
+      </div>       
+    </div>
+  </div>
+</nav>
+
+<div class="col-md-3">
+<h2 class="mb-5" id="mb-5">Education</h2> 
+<ul>
+  <li>
+    <h4 class="text-primary">B.Tech(Computer Science)</h4>
+    <p>2023-running</p>
+  </li>
+  <li>
+    <h4 class="text-primary">10th(M.P Board)</h4>
+    <p>2019-2020</p>
+  </li>
+  <li>
+    <h4 class="text-primary">12th(M.P Board)</h4>
+    <p>2022-2023</p>
+  </li>
+</ul>
+</div>
+
+<div class=" float-right col-md-6 " id="width">
+<h2 class="mb-5" id="mb-6">HOBBIES</h2>
+<ul>
+  <li>
+    <h4 class="text-primary">Web making</h4>
+    </li><br>
+
+  <li>
+    <h4 class="text-primary">Reading</h4> 
+  </li><br>
+
+  <li>
+    <h4 class="text-primary">Acting</h4>
+  </li><br>
+
+  <li>
+    <h4 class="text-primary">Listening music</h4>
+  </li><br>
+   <li>
+    <h4 class="text-primary">Coding</h4>
+  </li><br>
+</ul>
+</div>
+
+
+ <div class=" col-md-6 " id="col-md-6">
+<h2 class="mb-5" id="mb-7">STRENGTH</h2>
+<ul>
+  
+  <li>
+    <h4 class="text-primary">Hard Worker</h4>
+     
+  </li><br>
+  <li>
+    <h4 class="text-primary">Self Control</h4>
+    </li><br>
+
+    <li>
+    <h4 class="text-primary">Self Motivated</h4>
+    
+  </li><br>
+
+  <li>
+    <h4 class="text-primary">Focused</h4>
+     </li><br>
+
+       <li>
+    <h4 class="text-primary">Focused</h4>
+     </li><br>
+</ul>
+</div>
+
+<div class="col-md-12">
+<h2 class="mb-5">Skills</h2>  
+
+<div class="progress mb-4" style="height:25px;" >
+  <div class="progress-bar progress-bar-striped active bg-primary text-left pl-2" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML</div>
+</div>       
+<div class="progress mb-4" style="height:25px;">
+  <div class="progress-bar progress-bar-striped active bg-primary text-left pl-2" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">CSS</div>
+</div> 
+<div class="progress mb-4" style="height:25px;">
+  <div class="progress-bar progress-bar-striped active bg-primary text-left pl-2" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+</div>       
+<div class="progress mb-4" style="height:25px;">
+  <div class="progress-bar progress-bar-striped active bg-primary text-left pl-2" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">PHP</div>
+</div>  
+<div class="progress mb-4" style="height:25px;">
+  <div class="progress-bar progress-bar-striped active bg-primary text-left pl-2" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">Python</div>
+</div>       
+<div class="progress mb-4" style="height:25px;">
+  <div class="progress-bar progress-bar-striped active bg-primary text-left pl-2" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">Django</div>
+</div>
+<div class="progress mb-4" style="height:25px;">
+	<div class="progress-bar progress-bar-striped active bg-primary text-left pl-2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Codigniter</div>
+</div> 
+<div class="progress mb-4" style="height:25px;">
+  <div class="progress-bar progress-bar-striped active bg-primary text-left pl-2" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+</div>
+
+<footer class="bg-danger text-grey-50 text-center mt-5 p-3">
+  &copy; 2020   aayushrajpoot <a href="#" class="text-black-50">GitHub</a> | <a href="#" class="text-black-50">LinkedIn</a> | <a href="#" class="text-black-50">Twitter</a>
+</footer>
+ 
+
+
+
+	   
+ 
+
+
+
+
+</body>
+</html>

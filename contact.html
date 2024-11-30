@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		
+		header{
+			width: 100%;
+			height: 70px;
+			display: flex;
+			justify-content: space-between;
+			background-color: rgba(0, 0, 0, 1);
+		    align-items: center;
+		    padding: 50px 10px;
+		}
+
+		.logo{
+			font-size: 35px;
+			font-weight: bold;
+			letter-spacing: 1.5px;
+			color: skyblue;
+		   -webkit-background-clip:text;
+		    text-shadow: 10px 15px 0px skyblue;
+		    animation: text 1s infinite alternate;
+
+		}
+		@keyframes text {
+			100%{
+				text-shadow: 0px 0px 0px white;
+			}
+		}
+
+		.pogo{
+			background-color:#151515 ;
+			height: 727px;
+			border: solid skyblue 6px;
+		   
+			box-shadow: 0px 0px 10px skyblue;
+		}
+             a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+    transform: scaleX(0);
+    transform-origin: top right;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+   
+   }
+
+      a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    cursor: pointer;
+    }
+		
+		
+
+        li{
+			display: inline-block;
+		    padding: 0px 35px;
+           
+		}
+		li :hover{
+                 color: skyblue;
+                 text-decoration: none;
+        }
+
+     
+
+		a{
+		   color: white;
+		   font-size: 20px;
+		  
+		   cursor: pointer;
+		}
+		.a1{
+			color: white;
+			text-decoration: none;
+		}
+		.button1{
+			background-color: black;
+			border: 3px solid skyblue;
+			border-radius: 50px;
+			padding: 9px 25px;
+			transition-property: background-color ;
+			transition-duration: 1s;	
+			text-decoration: none;
+			
+		    
+		 }
+		 
+		 .button1:hover .a1{
+		 	color: skyblue;
+		 	text-decoration: none;
+		
+	 }
+		
+		.lolo{
+			height: 50px;
+			width: 100px;
+			background-color: skyblue;
+			animation-direction: alternate;
+			 animation: mess 1s infinite;
+			clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+		}
+		@keyframes mess{
+			from{
+				
+				width: 100px;
+			}
+			to{
+				width: 150px;
+			}
+		}
+
+		
+		.solo{
+			width: 150px;
+		}
+		
+		h2{
+			margin-left: 360px;
+			display: inline-block;
+			color: white;
+			 font-size: 35PX;
+			 position: relative;
+			 top: 30px;
+
+		}
+		.span1{
+		    font-size: 35PX;
+			color: skyblue;
+			 position: relative;
+			 top: 30px;
+
+		}
+		.box1{
+			background-color: white;
+			height: 60px;
+			width: 300px;
+			margin-left: 1000px;
+			   position: relative;
+		   top: 100px;
+
+           
+		}
+		.box1:hover{
+			background-color: skyblue;
+		}
+		.box2:hover{
+			background-color: skyblue;
+		}
+		.box3:hover{
+			background-color: skyblue;
+		}
+			
+		.box2{
+			background-color: white;
+			height: 60px;
+			width: 300px;
+			margin-left: 1000px;
+			   position: relative;
+		   top: 100px;
+
+		}
+			.box3{
+			background-color: white;
+			height: 60px;
+			width: 300px;
+			margin-left: 1000px;
+		   position: relative;
+		   top: 100px;
+
+		}
+		.glyphicon-map-marker{
+			font-size: 20px;
+	      margin-top: 10px;
+		}
+		.span2{
+			font-weight: bolder;
+			margin-left: 25px;
+			position: relative;
+			bottom: 30px;
+
+		}
+		.span3{
+			margin-left: 20px;
+			position: relative;
+			right: 85px;
+			bottom: 10px;
+		}
+		.glyphicon-user{
+			font-size: 20px;
+	      margin-top: 10px;
+		}
+		.span4{
+			font-weight: bolder;
+			margin-left: 10px;
+			position: relative;
+			bottom: 10px;
+
+		}
+		.span5{
+			margin-left: 20px;
+			position: relative;
+			right: 92px;
+			top: 10px;
+		}
+			.span6{
+			font-weight: bolder;
+			margin-left: 2px;
+			position: relative;
+		   bottom: 5px;
+		   left: 5px;
+		}
+		.span7{
+			margin-left: 20px;
+			position: relative;
+			right: 60px;
+			top: 13px;
+			
+		}
+			.glyphicon-envelope{
+			font-size: 20px;
+	      margin-top: 10px;
+		}
+		.glyphicon-earphone{
+			color: skyblue;
+		}
+		.box4{
+          height: 400px;
+          width: 600px;
+          background-color: black;		
+          position: absolute;
+           bottom: 85px;
+          left: 200px;
+          border: solid white 1px;
+          box-shadow: 0px 0px 15px skyblue;
+		}
+		h3{
+			
+        font-size: 25px;
+			margin-left: 20px;
+			color: white;
+			
+		}
+		 input{
+           	border: none;
+           	border-bottom: 1px solid white;
+            background-color: black;
+            color: skyblue;
+            margin-left: 20px;
+            margin-top: 50px;
+            width: 220px;
+            
+         }
+        .label1{
+        	position: absolute;
+        	left: 20px;
+        	top: 90px;
+        	color: white;
+        }
+         .label2{
+        	position: absolute;
+        	left: 325px;
+        	top: 90px;
+        	color: white;
+        }
+        .input1{
+        	margin-left: 80px;
+
+        }
+          .label3{
+        	position: absolute;
+        	left: 25px;
+        	top: 170px;
+        	color: white;
+        }
+        .input2{
+          margin-top: 60px;
+
+        }
+         .label4{
+        	position: absolute;
+        	left: 325px;
+        	top: 170px;
+        	color: white;
+        }
+        .input3{
+          margin-left: 80px;
+
+        }
+         .label5{
+         	font-size: 18PX;
+        	position: absolute;
+        	left: 20px;
+        	top: 260px;
+        	color: skyblue;
+
+        }
+        .input4{
+          margin-top: 80px;
+          	border-bottom: 2px double skyblue;
+
+        }
+
+        .button2{
+        	width: 90px;
+        	font-size: 20px;
+        	margin-left: 250PX;
+        	color: black;
+         	box-shadow:  2px 2px 10px blue inset , 2px 2px 10px darkred inset;
+        }
+
+
+		
+
+		
+		
+	</style>
+         
+		
+</head>
+<body>
+	 <div class="pogo">
+	 <header>
+	 	<div class="logo">PORTFOLIO</div>
+	 	<div class="solo"><div class="lolo"></div></div>
+		<nav>
+			<ul>
+			    <li><a class="glyphicon glyphicon-home"  href="index.html">.Home</a></li>
+			    <li><a class="glyphicon glyphicon-project" href="project.html">Projects</a> </li>
+		        <li><a class="glyphicon glyphicon-project"  href="resume.html">Resume</a> </li>
+		        <li><a class="glyphicon glyphicon-earphone" href="contact.html">ContactUs</a></li>
+			</ul>
+		</nav>
+		<button class="button1"><a class="a1" class="glyphicon glyphicon-project" href="About.html">About me</a></button>
+	</header>
+	<h2>CONTACT </h2>
+	<span class="span1">ME</span>
+	<div class="box1"><p class="glyphicon glyphicon-map-marker"> </p><span class="span2">Location:</span><span class="span3" >Gopalganj(snehnagar),Sagar,M.P.</span></div><br><br>
+	<div class="box2"><p class="glyphicon glyphicon-user"> </p><span class="span4">Phone no.:</span><span class="span5" >+91 9165931430 </span></div><br><br>
+	<div class="box3"><p class="glyphicon glyphicon-envelope"> </p><span class="span6">E-mail:</span><span class="span7" >aayushrajpoot492@gmail.com</span></div>
+	<div class="box4">
+		<h3>Connect with me</h3>
+		<label class="label1">First name</label>
+		  <input  type="TEXT">
+		  	<label class="label2">Last name</label>
+		  	<input class="input1" type="text" name=""><br>
+		  		<label class="label3">E-mail</label>
+		  	<input class="input2" type="text" name="">
+		  	<label class="label4">Mobile no.</label>
+		  	<input class="input3" type="number" name=""><br>
+		  		<label class="label5">WRITE YOUR MESSAGE...</label>
+		  	<input class="input4" type="text" name=""><br><br>
+		  	<button class="button2">DONE</button>
+	</div>
+
+
+
+	
+
+
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JUMPING BALL</title>
+<style type="text/css">
+	  	h2{
+			margin-left: 680Px;
+		}
+
+		div{
+            height: 200px;
+            width: 200px;
+            background-color: skyblue;
+            border-radius: 50%;
+            margin-left: 680px; 
+            animation-duration: 2s;   
+            animation-name: moon;
+            animation-iteration-count:5;
+            animation-direction:alternate;/*we use 'inherit' also but in inherit ball is not jump alternate.*/
+            
+
+
+        }
+		@keyframes moon{
+		    from{
+				margin-top: 0px;
+			}
+			to{
+                background-color: darkred;
+                margin-top: 450px;
+			}
+		
+		} 
+
+</style>
+
+</head>
+<body>
+        <h2>JUMPING BALL</h2>
+        <div></div>
+</body>
+</html>

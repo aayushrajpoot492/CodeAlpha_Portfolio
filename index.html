@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		
+		header{
+			width: 100%;
+			height: 70px;
+			display: flex;
+			justify-content: space-between;
+			background-color: rgba(0, 0, 0, 1);
+		    align-items: center;
+		    padding: 50px 10px;
+		}
+
+		.logo{
+			font-size: 35px;
+			font-weight: bold;
+			letter-spacing: 1.5px;
+			color: skyblue;
+		   -webkit-background-clip:text;
+		    text-shadow: 10px 15px 0px skyblue;
+		    animation: text 1s infinite alternate;
+
+		}
+		@keyframes text {
+			100%{
+				text-shadow: 0px 0px 0px white;
+			}
+		}
+
+		.pogo{
+			background-color:black ;
+			height: 728px;
+			border: solid skyblue 6px;
+			box-shadow: 0px 0px 10px skyblue;
+		}
+
+
+     a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+    transform: scaleX(0);
+    transform-origin: top right;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+   
+   }
+
+      a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    cursor: pointer;
+
+    }
+		
+		
+
+        li{
+			display: inline-block;
+		    padding: 0px 35px;
+           
+		}
+		li :hover{
+                 color: skyblue;
+                 text-decoration: none;
+        }
+
+     
+
+		a{
+		   color: white;
+		   font-size: 20px;
+		  
+		   cursor: pointer;
+		}
+		.a1{
+			color: white;
+			text-decoration: none;
+		}
+		.button1{
+			background-color: black;
+			border: 3px solid skyblue;
+			border-radius: 50px;
+			padding: 9px 25px;
+			transition-property: background-color ;
+			transition-duration: 1s;	
+			text-decoration: none;
+			
+		    
+		 }
+		 
+		 .button1:hover .a1{
+		 	color: skyblue;
+		 	text-decoration: none;
+		
+	 }
+		.glyphicon-home{
+			color: skyblue;
+		}
+		.lolo{
+			height: 50px;
+			width: 100px;
+			background-color: skyblue;
+			animation-direction: alternate;
+			 animation: mess 1s infinite;
+			clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+		}
+		@keyframes mess{
+			from{
+				
+				width: 100px;
+			}
+			to{
+				width: 150px;
+			}
+		}
+
+		
+		.solo{
+			width: 150px;
+		}
+		.box1{
+			height: 250px;
+			width: 200px;
+			background-color: skyblue;
+			clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+			margin-left: 800px;
+			margin-top: 100px;
+           animation-direction: alternate;
+           position: fixed;
+			 animation: top 5s 1;
+		}
+
+
+      
+			@keyframes top{
+			from{
+				
+			   height: 5px;
+			}
+			to{
+				height: 250px;
+			}
+		}
+
+		img{
+			height: 200px;
+			width: 200px;
+		}
+		h4{
+			color: white;
+            font-size: 25px;
+			margin-top: 70px;
+			margin-left: 50px;
+             position: relative;
+            top: 15px;
+		}
+		h2{
+			color: white;
+			margin-top: 20px;
+			margin-left: 40px;
+             position: relative;
+            top: 20px;
+		}
+		h5{
+			color: white;
+			display: inline-block;
+			margin-left: 40px;
+			font-size: 25px;
+             position: relative;
+            top: 20px;
+		}
+		span{
+			color: skyblue;
+			font-size: 25px;
+             position: relative;
+            top: 20px;
+		}
+		p{
+            font-size: 18px;
+			color: white;
+			margin-left: 40px;
+            position: relative;
+            top: 50px;
+		}
+		   .he{
+		   	height: 20px;
+		   	width: 20px;
+		   	border: solid skyblue 2px;
+		   	border-radius: 50%;
+		   	padding: 30px;
+		      position: relative;
+		      bottom: 66px;
+		      left: 100px;
+		   }
+        .he:hover{
+            box-shadow: 0px 0px 8px skyblue, 0px 0px 8px skyblue inset;
+        }
+        .fa-twitter{
+            font-size: 30px;
+            color: skyblue;
+            transition-property: transform;
+            transition-duration: 1s;
+            position:relative;
+            bottom: 15px;
+             right: 13px;
+           cursor: none;
+        }
+
+            .on{
+            width: 350px;
+            height: 130px;
+            border:3px solid;
+            border-top-color:skyblue;
+            border-bottom-color:skyblue ;
+            border-right-color:skyblue;
+            border-left-color: skyblue;
+            border-radius: 10px;
+            background-color: black;
+            margin-left: 60px;
+            margin-top: 100px;
+            cursor: pointer;
+
+
+        }
+        .the{
+              border: 2px solid deeppink;
+              border-radius: 50%;
+              width: 20px;
+              height: 20px;
+              padding: 30px;
+              margin-left: 20px;
+              margin-top: 33px;
+              position: relative;
+             text-decoration: none;
+
+        }
+        .the:hover{
+            box-shadow: 0px 0px 10px deeppink, 0px 0px 10px deeppink inset;
+            color: deeppink;
+        }
+        .fa-instagram{
+            font-size: 30px;
+            color: deeppink;
+            transition-property: transform;
+            transition-duration: 1s;
+            position:relative;
+            bottom: 15px;
+             right: 13px;
+             text-decoration: none;
+             cursor: none;
+
+        }
+        .fa-instagram:hover{
+            transform: rotateY(360deg);
+            color: deeppink;
+
+        }
+        /*.we{
+            height: 20px;
+            width: 20px;
+            padding: 15px;
+            position: relative;
+            bottom: 50px;
+            border-radius: 50%;
+            border: 2px solid skyblue;
+            margin-left: 110px;
+            transition-property: transform;
+            transition-duration: 1s;
+            
+        }*/
+        .fa-twitter:hover{
+            transform: rotateY(360deg);
+            color: skyblue;
+
+        }
+         .kit{
+              border: 2px solid blue;
+              border-radius: 50%;
+              width: 20px;
+              height: 20px;
+              padding: 30px;
+              position: relative;
+              bottom: 125px;
+              margin-left: 180px;
+
+              
+        }
+        .kit:hover{
+            box-shadow: 0px 0px 10px blue, 0px 0px 10px blue inset;
+            
+        }
+        .fa-facebook{
+            font-size: 30px;
+            color: black;
+            position: relative;
+            bottom: 22px;
+            right: 15px;
+            background-color:blue;
+            padding: 5px;
+            border-radius: 50%;
+            transition-property: transform;
+            transition-duration: 1s;
+            cursor: none;
+            
+        }
+        .fa-facebook:hover{
+            transform: rotateY(360deg);
+            
+        }
+        .lit{
+              font-size: 35px ;
+              border: 2px solid red;
+              border-radius: 50%;
+              width: 20px;
+              height: 20px;
+              padding: 30px;
+              position: relative;
+              bottom: 185px;
+              margin-left: 260px;
+              color: red;
+
+        }
+        .lit:hover{
+            box-shadow: 0px 0px 10px red, 0px 0px 10px red inset;
+            color: red;
+        }
+         .fa-youtube{
+            font-size: 35px;
+            color:red;
+            transition-property: transform;
+            transition-duration: 1s;
+            position: absolute;
+            left: 18px;
+            bottom: 15px;
+            text-decoration: none;
+            
+             cursor: none;
+
+        }
+        .fa-youtube:hover{
+            transform: rotateY(360deg);
+            text-decoration: none;
+            color: red;
+         }
+         .button2{
+         	font-size: 15px;
+         	margin-left: 810px;
+         	margin-top: 10px;
+         	transform: scale(1);
+         	padding: 15px 40px;
+         	text-decoration: none;
+         	border: none;
+         	outline: none;
+         	color: skyblue;
+         	cursor: pointer;
+         	position: relative;
+            bottom: 100px;
+         	z-index: 0;
+         	border-radius: 12px;
+
+
+         }
+         .button2::after{
+                   content: "";
+                   z-index: -1;
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                 	background-color:#333;
+                   left:0;
+                   top:0;
+                   border-radius: 10px;
+                   color: skyblue;
+         }
+         .button2::before{
+         	content: "";
+         	background: linear-gradient(45deg ,#FF0000,#FF7300,#FFFB00,#48FF00,#00FFD5,#002BFF,#FF00C8,#FF0000);
+         	position: absolute;
+         	top: -2PX;
+         	left: -2px;
+         	background-size: 600%;
+         	z-index: -1;
+         	width: calc(100% + 4px);
+         	height: calc(100% + 4px);
+         	filter: blur(8px);
+            color: skyblue;
+            animation: glow 20s linear infinite;
+         	transition: opacity .3s ease-in-out;
+         	border-radius: 10px;
+         	opacity: 0;
+         }
+         @keyframes glow {
+         	0%{background-position: 0 0;}
+         	50%{background-position: 400% 0;}
+         	100%{background-position: 0 0;}
+         }
+          .button2::before{
+         	opacity: 1;
+         	color: skyblue;
+         }
+
+         .button2:active:after{
+         	background: transparent;
+         	color:skyblue;
+         }
+         .button2:active{
+                 color: skyblue;
+                 font-weight: bolder;
+         }
+         .button2:hover{
+         	color: skyblue;
+         	text-decoration: none;
+         }
+         .omg{
+         	color: skyblue;
+         }
+         .button2:hover.omg{
+
+         	color: black;
+         }
+
+      .imgee
+      {
+        height: 250px;
+      }
+
+ 
+		
+	</style>
+</head>
+<body>
+	 <div class="pogo">
+	 <header>
+	 	<div class="logo">PORTFOLIO</div>
+	 	<div class="solo"><div class="lolo"></div></div>
+		<nav>
+			<ul>
+			    <li><a class="glyphicon glyphicon-home"  href="index.html">.Home</a></li>
+			    <li><a class="glyphicon glyphicon-project" href="project.html">Projects</a> </li>
+		        <li><a class="glyphicon glyphicon-project"  href="resume.html">Resume</a> </li>
+		        <li><a class="glyphicon glyphicon-earphone" href="contact.html">ContactUs</a></li>
+			</ul>
+		</nav>
+		<button class="button1"><a class="a1" class="glyphicon glyphicon-project" href="About.html">About me</a></button>
+	</header>
+	<div class="box1"><img class="imgee" src="img3.jpg"> </div>
+
+	<h4>Hello,It's Me</h4>
+	<h2>Aayush Rajpoot</h2>
+    
+	<h5>I'm a</h5>
+	<span>Web Developer</span>
+ 
+	<p>This is my unique portfolio .<br>It's a collection of user's progress , development,skills and success over time<br> It can include projects work and course experiences.</p>
+
+
+
+
+<div class="on">
+	<div class="the"><a  href="" class="fa fa-instagram"></a></div>
+	<div class="he"><a  href="" class="fa fa-twitter"></a></div>
+    <div class="kit"><a href="" class="fa fa-facebook"></a></div>
+    <div class="lit"><a href="" class="fa fa-youtube"></a></div>
+</div>
+
+<button class="button2"> <a href="myprofile.html" class="omg"> My Profile!</a></button>
+
+</div>
+
+
+
+
+</body>
+</html>
